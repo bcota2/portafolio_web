@@ -3,13 +3,20 @@ import Foto from '../images/Brayan.JPEG';
 
 const About = () => {
   return (
+    <>
+    <nav aria-label='breadcrumb'>
+      <ol>
+        <li className="breadcrumb-item"><a href="/">About</a></li>
+      </ol>
+    </nav>
     <div className="content-page" style={{border: '6px inset #5AB1D2'}}>
       <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center',gap: '40px', maxWidth: '1200px', margin: '0',}}> 
           <h1>About Me</h1>
-        <div style={{ display: "flex", alignItems: "rigth", gap: "20px" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "20px", justifyContent: 'flex-end' }}>
           <div style={{ width: "150px", height: "150px", borderRadius: "50%", overflow: "hidden"}}>
             <img src={Foto} alt="Brayan Cota" style={{ width: "100%", height: "100%", objectFit: "cover"}}/>
           </div>
+            <p>Brayan Cota</p>
         </div>
       </div>
 
@@ -21,6 +28,7 @@ const About = () => {
       </p>
 
     </div>
+    </>
   );
 };
 

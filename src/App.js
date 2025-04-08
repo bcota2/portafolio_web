@@ -12,7 +12,7 @@ function App() {
     <Router>
       <div className="app">
         <Sidebar />
-        <div className="main-content">
+        <div className="main-content" style={{ backgroundColor: "#e6e8e8" }}>
           <Routes>
             <Route path="/" element={<About />} />
             <Route path="/about" element={<About />} />

@@ -1,5 +1,6 @@
 // src/components/Sidebar.js
 import { NavLink } from 'react-router-dom';
+import { IoIosBookmarks , IoIosPerson, IoMdAlert, IoMdTrophy, IoIosPaper } from "react-icons/io";
 import './Sidebar.css';
 
 const Sidebar = () => {
@@ -11,11 +12,11 @@ const Sidebar = () => {
       </div>
 
       <nav className="sidebar-menu">
-        <NavLink to="/about" className={({ isActive }) => `menu-item ${isActive ? 'active' : ''}`}> About Me </NavLink>
-        <NavLink to="/education" className={({ isActive }) => `menu-item ${isActive ? 'active' : ''}`}> Education </NavLink>
-        <NavLink to="/experience" className={({ isActive }) => `menu-item ${isActive ? 'active' : ''}`}> Experience </NavLink>
-        <NavLink to="/project" className={({ isActive }) => `menu-item ${isActive ? 'active' : ''}`}> Project </NavLink>
-        <NavLink to="/contact" className={({ isActive }) => `menu-item ${isActive ? 'active' : ''}`}> Contact </NavLink>
+        <NavLink to="/about" className={({ isActive }) => `menu-item ${isActive ? 'active' : ''}`}> <IoMdAlert /> About Me </NavLink>
+        <NavLink to="/education" className={({ isActive }) => `menu-item ${isActive ? 'active' : ''}`}> <IoIosBookmarks/> Education </NavLink>
+        <NavLink to="/experience" className={({ isActive }) => `menu-item ${isActive ? 'active' : ''}`}> <IoMdTrophy />Experience </NavLink>
+        <NavLink to="/project" className={({ isActive }) => `menu-item ${isActive ? 'active' : ''}`}> <IoIosPaper />Project </NavLink>
+        <NavLink to="/contact" className={({ isActive }) => `menu-item ${isActive ? 'active' : ''}`}> <IoIosPerson/>Contact </NavLink>
       </nav>
       
       <div className="sidebar-footer">
