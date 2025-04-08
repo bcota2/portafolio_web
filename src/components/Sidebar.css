@@ -1,0 +1,125 @@
+/* src/components/Sidebar.css */
+
+/* Contenedor principal del sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  /* Encabezado del sidebar */
+  .sidebar-header {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .sidebar-header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  
+  .sidebar-header p {
+    font-size: 1rem;
+    color: #bdc3c7;
+    margin: 0;
+  }
+  
+  /* Menú de navegación */
+  .sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex-grow: 1;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  /* Items del menú */
+  .menu-item {
+    display: flex;
+    align-items: center;
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 12px 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+  }
+  
+  .menu-item.active {
+    background-color: #3498db;
+    color: white;
+    font-weight: 500;
+  }
+  
+  /* Íconos (opcional) */
+  .menu-item svg {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+  }
+  
+  /* Pie del sidebar */
+  .sidebar-footer {
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.8rem;
+    color: #7f8c8d;
+    text-align: center;
+  }
+  
+  /* Efecto de transición para el estado activo */
+  .menu-item {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .menu-item.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background-color: #ffffff;
+  }
+  
+  /* Responsive (opcional) */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+      padding: 15px;
+    }
+    
+    .sidebar-menu {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    
+    .menu-item {
+      padding: 8px 12px;
+      font-size: 0.85rem;
+    }
+  }
