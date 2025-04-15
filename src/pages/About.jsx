@@ -1,14 +1,10 @@
 import React from 'react';
 import Foto from '../images/Brayan.JPEG'; 
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 
-const About = () => {
+export default function About() {
   return (
     <>
-    <nav aria-label='breadcrumb'>
-      <ol>
-        <li className="breadcrumb-item"><a href="/">About</a></li>
-      </ol>
-    </nav>
     <div className="content-page" style={{border: '6px inset #5AB1D2'}}>
       <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center',gap: '40px', maxWidth: '1200px', margin: '0',}}> 
           <h1>About Me</h1>
@@ -29,7 +25,5 @@ const About = () => {
 
     </div>
     </>
-  );
+  )
 };
-
-export default About;
