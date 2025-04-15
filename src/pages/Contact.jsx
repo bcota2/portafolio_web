@@ -53,7 +53,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="btn-wrapper">
-                    <button className="submit-btn">
+                    <button className="btn btn-primary btn-lg">
                       Submit
                     </button>
                   </div>
@@ -113,7 +113,6 @@ const Contact = () => {
       </div>
     </div>
 
-    
   );
 };
 

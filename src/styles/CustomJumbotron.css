@@ -1,0 +1,10 @@
+/* Estilos personalizados para el jumbotron */
+.rounded-3 {
+    border-radius: 0.5rem !important;
+  }
+  
+  .bg-light {
+    background-color: #f8f9fa !important;
+  }
+  
+  /* Puedes añadir más estilos según necesites */

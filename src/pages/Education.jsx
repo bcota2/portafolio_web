@@ -10,6 +10,8 @@ const Education = () => {
       A lo largo de mi formación profesional he adquirido conocimientos sólidos en áreas como desarrollo web, bases de datos, lógica de programación, estructuras de datos y análisis de información. He trabajado en proyectos utilizando tecnologías como C#, ASP.NET Core, SQL Server, React, MAUI y Power BI. También he explorado temas como la inteligencia artificial, el análisis ético de la tecnología y lenguajes modernos como Rust. Mi enfoque está en aplicar lo aprendido en proyectos reales que generen soluciones prácticas y valor en el entorno profesional.
       </p>
 
+
+      
     </div>
   );
 };
